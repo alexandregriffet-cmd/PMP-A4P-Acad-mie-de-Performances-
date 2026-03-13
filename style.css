@@ -68,3 +68,40 @@ input,select,textarea{padding:12px 14px;border:1px solid #c9d5e5;border-radius:1
   .wrapper{max-width:100%;padding:0}
   .report section,.card{box-shadow:none;border-radius:0;break-inside:avoid}
 }
+/* Barre fixe A4P */
+
+.a4p-topbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#1f3556;
+padding:12px 20px;
+z-index:9999;
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
+display:flex;
+justify-content:flex-start;
+}
+
+/* Bouton hub */
+
+.a4p-hub-btn{
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:14px;
+background:#2e4a73;
+padding:10px 16px;
+border-radius:10px;
+transition:all 0.2s ease;
+}
+
+.a4p-hub-btn:hover{
+background:#3a5c8f;
+}
+
+/* Décalage du contenu pour la barre fixe */
+
+body{
+padding-top:60px;
+}
