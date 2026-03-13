@@ -1,1090 +1,602 @@
-window.PMP_QUESTIONS = [
+const QUESTIONS = [
   {
-    "id": "Q1",
-    "type": "likert",
+    "id": 1,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Avant une compétition, je me sens rapidement prêt à entrer dans l'action.",
+    "text": "Dans les moments importants, mon niveau d’énergie augmente.",
     "reverse": false
   },
   {
-    "id": "Q2",
-    "type": "likert",
+    "id": 2,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "J'ai besoin de beaucoup de temps pour me mettre en rythme avant d'être performant.",
-    "reverse": false
+    "text": "La pression perturbe mes gestes techniques.",
+    "reverse": true
   },
   {
-    "id": "Q3",
-    "type": "likert",
+    "id": 3,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Quand l'intensité monte, mon énergie mentale augmente aussi.",
+    "text": "L’enjeu me donne envie de me dépasser.",
     "reverse": false
   },
   {
-    "id": "Q4",
-    "type": "likert",
+    "id": 4,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je démarre souvent trop doucement dans les premières minutes.",
+    "text": "Avant une compétition, je ressens une tension physique difficile à canaliser.",
     "reverse": true
   },
   {
-    "id": "Q5",
-    "type": "likert",
+    "id": 5,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je me sens stimulé par l'ambiance compétitive.",
+    "text": "La pression me rend plus concentré.",
     "reverse": false
   },
   {
-    "id": "Q6",
-    "type": "likert",
+    "id": 6,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Quand il y a de l'enjeu, je me réveille mentalement.",
-    "reverse": false
+    "text": "Je perds mes moyens dans les moments décisifs.",
+    "reverse": true
   },
   {
-    "id": "Q7",
-    "type": "likert",
+    "id": 7,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je manque souvent d'allant au moment où il faut accélérer.",
-    "reverse": true
+    "text": "Les situations difficiles stimulent ma performance.",
+    "reverse": false
   },
   {
-    "id": "Q8",
-    "type": "likert",
+    "id": 8,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je sais mobiliser mon énergie quand il faut répondre présent.",
+    "text": "Je me sens à l’aise quand l’enjeu est élevé.",
     "reverse": false
   },
   {
-    "id": "Q9",
-    "type": "likert",
+    "id": 9,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je ressens une dynamique positive quand le défi est élevé.",
-    "reverse": false
+    "text": "Mon corps devient trop tendu sous pression.",
+    "reverse": true
   },
   {
-    "id": "Q10",
-    "type": "likert",
+    "id": 10,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je subis parfois le rythme au lieu de l'imposer.",
-    "reverse": true
+    "text": "Les grands rendez-vous me donnent de l’élan.",
+    "reverse": false
   },
   {
-    "id": "Q11",
-    "type": "likert",
+    "id": 11,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je peux élever mon niveau d'activation sans m'éparpiller.",
-    "reverse": false
+    "text": "J’évite mentalement les moments importants.",
+    "reverse": true
   },
   {
-    "id": "Q12",
-    "type": "likert",
+    "id": 12,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je me sens trop passif dans les moments décisifs.",
-    "reverse": true
+    "text": "Je peux performer même quand la pression monte.",
+    "reverse": false
   },
   {
-    "id": "Q13",
-    "type": "likert",
+    "id": 13,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je transforme facilement la tension en énergie utile.",
-    "reverse": false
+    "text": "Plus l’enjeu augmente, plus je me crispe.",
+    "reverse": true
   },
   {
-    "id": "Q14",
-    "type": "likert",
+    "id": 14,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je manque parfois d'intensité alors que la situation l'exige.",
-    "reverse": true
+    "text": "J’aime sentir qu’un match compte vraiment.",
+    "reverse": false
   },
   {
-    "id": "Q15",
-    "type": "likert",
+    "id": 15,
     "dimension": "activation",
-    "label": "Activation",
-    "text": "Je me mets mentalement en route assez vite.",
+    "text": "Je transforme le stress en énergie utile.",
     "reverse": false
   },
   {
-    "id": "Q16",
-    "type": "likert",
+    "id": 16,
+    "dimension": "activation",
+    "text": "L’importance du moment fait baisser mon niveau de jeu.",
+    "reverse": true
+  },
+  {
+    "id": 17,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je reste concentré même quand l'environnement est bruyant.",
+    "text": "Je reste concentré longtemps pendant un match ou un entraînement.",
     "reverse": false
   },
   {
-    "id": "Q17",
-    "type": "likert",
+    "id": 18,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je me laisse facilement distraire pendant l'entraînement ou le match.",
+    "text": "Le bruit ou le public me déconcentre facilement.",
     "reverse": true
   },
   {
-    "id": "Q18",
-    "type": "likert",
+    "id": 19,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je reviens vite à l'instant présent après une erreur.",
+    "text": "Je sais me reconcentrer rapidement après une erreur.",
     "reverse": false
   },
   {
-    "id": "Q19",
-    "type": "likert",
+    "id": 20,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Mon attention décroche dès que la séance dure longtemps.",
-    "reverse": true
+    "text": "Après une action ratée, mon attention revient vite sur le jeu.",
+    "reverse": false
   },
   {
-    "id": "Q20",
-    "type": "likert",
+    "id": 21,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je sais me refocaliser sur une consigne importante.",
+    "text": "Je repère bien les détails utiles de la situation.",
     "reverse": false
   },
   {
-    "id": "Q21",
-    "type": "likert",
+    "id": 22,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Quand plusieurs choses se passent en même temps, je garde le bon repère.",
-    "reverse": false
+    "text": "Je pense souvent à autre chose pendant l’action.",
+    "reverse": true
   },
   {
-    "id": "Q22",
-    "type": "likert",
+    "id": 23,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je pense trop à autre chose pendant la performance.",
-    "reverse": true
+    "text": "Je reste focalisé malgré les perturbations.",
+    "reverse": false
   },
   {
-    "id": "Q23",
-    "type": "likert",
+    "id": 24,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je suis capable de me reconcentrer très vite.",
+    "text": "Je peux diriger toute mon attention sur l’instant présent.",
     "reverse": false
   },
   {
-    "id": "Q24",
-    "type": "likert",
+    "id": 25,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je garde le fil du jeu même sous pression.",
-    "reverse": false
+    "text": "Mon esprit s’échappe facilement du match.",
+    "reverse": true
   },
   {
-    "id": "Q25",
-    "type": "likert",
+    "id": 26,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je perds parfois ma concentration sur des détails inutiles.",
-    "reverse": true
+    "text": "Je maintiens ma concentration jusqu’à la fin.",
+    "reverse": false
   },
   {
-    "id": "Q26",
-    "type": "likert",
+    "id": 27,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je peux maintenir mon attention jusqu'à la fin.",
-    "reverse": false
+    "text": "Je perds le fil quand plusieurs choses se passent en même temps.",
+    "reverse": true
   },
   {
-    "id": "Q27",
-    "type": "likert",
+    "id": 28,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Mon esprit part facilement ailleurs avant un geste important.",
+    "text": "Je retrouve vite mes repères attentionnels.",
     "reverse": false
   },
   {
-    "id": "Q28",
-    "type": "likert",
+    "id": 29,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je sais quoi regarder au bon moment.",
+    "text": "Je repère bien les signaux utiles du jeu.",
     "reverse": false
   },
   {
-    "id": "Q29",
-    "type": "likert",
+    "id": 30,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je m'éparpille quand le contexte devient complexe.",
-    "reverse": false
+    "text": "Les distractions prennent rapidement le dessus sur moi.",
+    "reverse": true
   },
   {
-    "id": "Q30",
-    "type": "likert",
+    "id": 31,
     "dimension": "attention",
-    "label": "Attention",
-    "text": "Je suis présent mentalement sur ce que j'ai à faire.",
+    "text": "Je sais revenir à l’essentiel dans les moments clés.",
     "reverse": false
   },
   {
-    "id": "Q31",
-    "type": "likert",
+    "id": 32,
+    "dimension": "attention",
+    "text": "Ma concentration varie trop selon les circonstances.",
+    "reverse": true
+  },
+  {
+    "id": 33,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je garde un certain calme quand la pression monte.",
-    "reverse": false
+    "text": "Mes émotions influencent fortement ma performance.",
+    "reverse": true
   },
   {
-    "id": "Q32",
-    "type": "likert",
+    "id": 34,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Mes émotions prennent parfois trop de place dans ma performance.",
-    "reverse": true
+    "text": "Je sais calmer mon stress rapidement.",
+    "reverse": false
   },
   {
-    "id": "Q33",
-    "type": "likert",
+    "id": 35,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je sais faire redescendre la tension quand j'en ai besoin.",
-    "reverse": false
+    "text": "Une frustration reste longtemps dans ma tête.",
+    "reverse": true
   },
   {
-    "id": "Q34",
-    "type": "likert",
+    "id": 36,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Une frustration peut me poursuivre longtemps pendant l'effort.",
+    "text": "Je retrouve vite mon calme après une erreur.",
     "reverse": false
   },
   {
-    "id": "Q35",
-    "type": "likert",
+    "id": 37,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je retrouve assez vite mon équilibre émotionnel.",
+    "text": "Je sais transformer une erreur en motivation.",
     "reverse": false
   },
   {
-    "id": "Q36",
-    "type": "likert",
+    "id": 38,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je gère plutôt bien l'agacement après une décision injuste.",
-    "reverse": false
+    "text": "Je peux perdre mon calme en compétition.",
+    "reverse": true
   },
   {
-    "id": "Q37",
-    "type": "likert",
+    "id": 39,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Quand quelque chose m'énerve, cela dérègle facilement mon jeu.",
+    "text": "Je régule efficacement mes émotions.",
     "reverse": false
   },
   {
-    "id": "Q38",
-    "type": "likert",
+    "id": 40,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je sais respirer et me recentrer dans les moments tendus.",
-    "reverse": false
+    "text": "Je ressens les émotions très intensément au point d’être débordé.",
+    "reverse": true
   },
   {
-    "id": "Q39",
-    "type": "likert",
+    "id": 41,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je ne me laisse pas dominer trop longtemps par le stress.",
-    "reverse": true
+    "text": "Je sais utiliser ma respiration pour me recentrer.",
+    "reverse": false
   },
   {
-    "id": "Q40",
-    "type": "likert",
+    "id": 42,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je monte vite en émotion et j'ai du mal à redescendre.",
-    "reverse": false
+    "text": "Mes émotions perturbent mon jeu trop longtemps.",
+    "reverse": true
   },
   {
-    "id": "Q41",
-    "type": "likert",
+    "id": 43,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je peux rester stable après un événement contrarié.",
+    "text": "Je retrouve rapidement mon équilibre émotionnel.",
     "reverse": false
   },
   {
-    "id": "Q42",
-    "type": "likert",
+    "id": 44,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Une erreur me fait parfois sortir de mon match émotionnellement.",
-    "reverse": true
+    "text": "Je garde mon calme sous pression.",
+    "reverse": false
   },
   {
-    "id": "Q43",
-    "type": "likert",
+    "id": 45,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je sais réguler mon niveau de tension intérieure.",
+    "text": "Je gère bien la frustration.",
     "reverse": false
   },
   {
-    "id": "Q44",
-    "type": "likert",
+    "id": 46,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je me crispe facilement quand je veux trop bien faire.",
+    "text": "Quand je suis contrarié, cela change vite mon comportement sur le terrain.",
     "reverse": true
   },
   {
-    "id": "Q45",
-    "type": "likert",
+    "id": 47,
     "dimension": "regulation",
-    "label": "Régulation",
-    "text": "Je retrouve mon axe émotionnel après un moment difficile.",
+    "text": "Je prends du recul après une erreur.",
+    "reverse": false
+  },
+  {
+    "id": 48,
+    "dimension": "regulation",
+    "text": "Je mets du temps à revenir mentalement dans le match.",
     "reverse": true
   },
   {
-    "id": "Q46",
-    "type": "likert",
+    "id": 49,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je m'implique pleinement dans ce que j'ai à faire.",
+    "text": "Je m’entraîne sérieusement même quand je n’en ai pas envie.",
     "reverse": false
   },
   {
-    "id": "Q47",
-    "type": "likert",
+    "id": 50,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Quand c'est difficile, j'ai parfois tendance à lâcher intérieurement.",
-    "reverse": true
+    "text": "Je me fixe des objectifs ambitieux.",
+    "reverse": false
   },
   {
-    "id": "Q48",
-    "type": "likert",
+    "id": 51,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je fournis mes efforts même quand je ne suis pas en réussite.",
+    "text": "Les difficultés me donnent envie de progresser.",
     "reverse": false
   },
   {
-    "id": "Q49",
-    "type": "likert",
+    "id": 52,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je reste investi jusqu'au bout de la séance ou du match.",
+    "text": "Je persévère malgré les obstacles.",
     "reverse": false
   },
   {
-    "id": "Q50",
-    "type": "likert",
+    "id": 53,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Mon niveau d'engagement dépend trop de mon humeur du moment.",
-    "reverse": true
+    "text": "J’aime progresser dans mon sport.",
+    "reverse": false
   },
   {
-    "id": "Q51",
-    "type": "likert",
+    "id": 54,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je vais au contact du défi plutôt que de l'éviter.",
+    "text": "Je travaille mes points faibles avec régularité.",
     "reverse": false
   },
   {
-    "id": "Q52",
-    "type": "likert",
+    "id": 55,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je garde de l'intention même quand la fatigue arrive.",
+    "text": "Les défis me stimulent.",
     "reverse": false
   },
   {
-    "id": "Q53",
-    "type": "likert",
+    "id": 56,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je me désengage parfois si la situation tourne mal.",
-    "reverse": true
+    "text": "Je m’investis pleinement à l’entraînement.",
+    "reverse": false
   },
   {
-    "id": "Q54",
-    "type": "likert",
+    "id": 57,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je suis capable de maintenir mon intensité mentale dans l'effort.",
-    "reverse": false
+    "text": "Après un échec, ma motivation baisse durablement.",
+    "reverse": true
   },
   {
-    "id": "Q55",
-    "type": "likert",
+    "id": 58,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je continue à chercher des solutions quand c'est compliqué.",
+    "text": "J’ai envie de progresser constamment.",
     "reverse": false
   },
   {
-    "id": "Q56",
-    "type": "likert",
+    "id": 59,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Quand je doute, mon implication baisse rapidement.",
-    "reverse": true
+    "text": "Je me donne à fond dans les séances importantes.",
+    "reverse": false
   },
   {
-    "id": "Q57",
-    "type": "likert",
+    "id": 60,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je prends ma part dans l'effort collectif.",
+    "text": "Je suis déterminé à atteindre mes objectifs.",
     "reverse": false
   },
   {
-    "id": "Q58",
-    "type": "likert",
+    "id": 61,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je reste combatif même après plusieurs difficultés.",
+    "text": "Je reste engagé même quand les résultats tardent.",
     "reverse": false
   },
   {
-    "id": "Q59",
-    "type": "likert",
+    "id": 62,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je peux perdre mon envie de me battre quand je suis contrarié.",
-    "reverse": false
+    "text": "Je reporte facilement les efforts difficiles.",
+    "reverse": true
   },
   {
-    "id": "Q60",
-    "type": "likert",
+    "id": 63,
     "dimension": "engagement",
-    "label": "Engagement",
-    "text": "Je tiens mentalement mon engagement sur la durée.",
+    "text": "La progression me motive au quotidien.",
     "reverse": false
   },
   {
-    "id": "Q61",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je crois en ma capacité à réussir dans les moments importants.",
+    "id": 64,
+    "dimension": "engagement",
+    "text": "Je suis persévérant.",
     "reverse": false
   },
   {
-    "id": "Q62",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je doute souvent de moi avant un événement important.",
+    "id": 65,
+    "dimension": "cognition",
+    "text": "J’aime comprendre une technique avant de l’appliquer.",
+    "reverse": false
+  },
+  {
+    "id": 66,
+    "dimension": "cognition",
+    "text": "J’apprends beaucoup en observant les autres.",
+    "reverse": false
+  },
+  {
+    "id": 67,
+    "dimension": "cognition",
+    "text": "J’analyse souvent mes performances.",
+    "reverse": false
+  },
+  {
+    "id": 68,
+    "dimension": "cognition",
+    "text": "Je me fie à mon intuition dans le jeu.",
+    "reverse": false
+  },
+  {
+    "id": 69,
+    "dimension": "cognition",
+    "text": "Je réfléchis aux stratégies possibles.",
+    "reverse": false
+  },
+  {
+    "id": 70,
+    "dimension": "cognition",
+    "text": "J’apprends en expérimentant directement.",
+    "reverse": false
+  },
+  {
+    "id": 71,
+    "dimension": "cognition",
+    "text": "Je cherche à comprendre précisément mes erreurs.",
+    "reverse": false
+  },
+  {
+    "id": 72,
+    "dimension": "cognition",
+    "text": "Je me fie d’abord à mes sensations.",
+    "reverse": false
+  },
+  {
+    "id": 73,
+    "dimension": "cognition",
+    "text": "J’aime analyser ce qui fonctionne ou non.",
+    "reverse": false
+  },
+  {
+    "id": 74,
+    "dimension": "cognition",
+    "text": "J’observe beaucoup les situations de jeu.",
+    "reverse": false
+  },
+  {
+    "id": 75,
+    "dimension": "cognition",
+    "text": "Je réfléchis aux solutions avant d’agir.",
+    "reverse": false
+  },
+  {
+    "id": 76,
+    "dimension": "cognition",
+    "text": "Je fais confiance à mon instinct dans l’instant.",
+    "reverse": false
+  },
+  {
+    "id": 77,
+    "dimension": "cognition",
+    "text": "J’aime comprendre la logique globale du jeu.",
+    "reverse": false
+  },
+  {
+    "id": 78,
+    "dimension": "cognition",
+    "text": "J’organise mentalement ma progression.",
+    "reverse": false
+  },
+  {
+    "id": 79,
+    "dimension": "cognition",
+    "text": "Je prends facilement de la hauteur pour comprendre la situation.",
+    "reverse": false
+  },
+  {
+    "id": 80,
+    "dimension": "cognition",
+    "text": "Je préfère improviser sans trop analyser.",
     "reverse": true
   },
   {
-    "id": "Q63",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je peux m'appuyer sur mes qualités quand l'enjeu augmente.",
+    "id": 81,
+    "dimension": "cognition",
+    "text": "Je mémorise mieux quand j’ai compris le sens de l’exercice.",
     "reverse": false
   },
   {
-    "id": "Q64",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Une erreur peut rapidement faire baisser ma confiance.",
+    "id": 82,
+    "dimension": "cognition",
+    "text": "Je préfère une consigne claire à une simple démonstration.",
     "reverse": false
   },
   {
-    "id": "Q65",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je me sens capable de répondre présent face à l'adversité.",
+    "id": 83,
+    "dimension": "action",
+    "text": "Je préfère répéter un geste jusqu’à le maîtriser.",
     "reverse": false
   },
   {
-    "id": "Q66",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "J'entre parfois en compétition avec l'idée que cela va être trop dur pour moi.",
+    "id": 84,
+    "dimension": "action",
+    "text": "Je suis plus performant quand je joue instinctivement.",
+    "reverse": false
+  },
+  {
+    "id": 85,
+    "dimension": "action",
+    "text": "Je ressens bien mon corps dans le mouvement.",
+    "reverse": false
+  },
+  {
+    "id": 86,
+    "dimension": "action",
+    "text": "Je m’adapte facilement aux situations imprévues.",
+    "reverse": false
+  },
+  {
+    "id": 87,
+    "dimension": "action",
+    "text": "J’aime une technique précise et des repères stables.",
+    "reverse": false
+  },
+  {
+    "id": 88,
+    "dimension": "action",
+    "text": "Je joue mieux quand je me sens libre.",
+    "reverse": false
+  },
+  {
+    "id": 89,
+    "dimension": "action",
+    "text": "Je ressens facilement le rythme du jeu.",
+    "reverse": false
+  },
+  {
+    "id": 90,
+    "dimension": "action",
+    "text": "Je m’ajuste rapidement aux changements.",
+    "reverse": false
+  },
+  {
+    "id": 91,
+    "dimension": "action",
+    "text": "Je recherche la précision technique.",
+    "reverse": false
+  },
+  {
+    "id": 92,
+    "dimension": "action",
+    "text": "Je joue de manière spontanée.",
+    "reverse": false
+  },
+  {
+    "id": 93,
+    "dimension": "action",
+    "text": "Je sens bien mes appuis et mes placements.",
+    "reverse": false
+  },
+  {
+    "id": 94,
+    "dimension": "action",
+    "text": "Je modifie naturellement mon geste selon la situation.",
+    "reverse": false
+  },
+  {
+    "id": 95,
+    "dimension": "action",
+    "text": "Je progresse grâce à la répétition.",
+    "reverse": false
+  },
+  {
+    "id": 96,
+    "dimension": "action",
+    "text": "Je suis efficace quand je laisse venir le geste.",
+    "reverse": false
+  },
+  {
+    "id": 97,
+    "dimension": "action",
+    "text": "Je préfère des repères simples pour exécuter.",
+    "reverse": false
+  },
+  {
+    "id": 98,
+    "dimension": "action",
+    "text": "Je m’enferme parfois trop dans la technique.",
     "reverse": true
   },
   {
-    "id": "Q67",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je garde un minimum de certitude même quand je traverse un passage difficile.",
-    "reverse": true
-  },
-  {
-    "id": "Q68",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je me compare souvent aux autres d'une manière qui me fragilise.",
+    "id": 99,
+    "dimension": "action",
+    "text": "Je suis meilleur quand je peux adapter mon action.",
     "reverse": false
   },
   {
-    "id": "Q69",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je m'appuie sur mes repères pour rester solide intérieurement.",
+    "id": 100,
+    "dimension": "action",
+    "text": "Je trouve facilement le bon timing dans le mouvement.",
     "reverse": false
-  },
-  {
-    "id": "Q70",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Mon estime de mes capacités varie trop selon mes derniers résultats.",
-    "reverse": true
-  },
-  {
-    "id": "Q71",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je peux me faire confiance sans avoir besoin d'être parfait.",
-    "reverse": false
-  },
-  {
-    "id": "Q72",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je me sens parfois inférieur aux autres dans les moments qui comptent.",
-    "reverse": true
-  },
-  {
-    "id": "Q73",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je sais reconnaître mes points forts.",
-    "reverse": false
-  },
-  {
-    "id": "Q74",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je laisse facilement un détail négatif éteindre ma confiance.",
-    "reverse": true
-  },
-  {
-    "id": "Q75",
-    "type": "likert",
-    "dimension": "confiance",
-    "label": "Confiance",
-    "text": "Je crois en ma marge de progression.",
-    "reverse": false
-  },
-  {
-    "id": "Q76",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je rebondis assez vite après un échec ou une erreur.",
-    "reverse": false
-  },
-  {
-    "id": "Q77",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je rumine longtemps quand quelque chose se passe mal.",
-    "reverse": true
-  },
-  {
-    "id": "Q78",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je sais repartir après un moment compliqué.",
-    "reverse": false
-  },
-  {
-    "id": "Q79",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Un mauvais passage peut me faire sortir durablement de ma performance.",
-    "reverse": true
-  },
-  {
-    "id": "Q80",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je transforme souvent les difficultés en apprentissage.",
-    "reverse": false
-  },
-  {
-    "id": "Q81",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je mets parfois beaucoup de temps à me remettre d'une déception.",
-    "reverse": false
-  },
-  {
-    "id": "Q82",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je peux repartir proprement après avoir subi un coup dur.",
-    "reverse": false
-  },
-  {
-    "id": "Q83",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je garde l'idée que rien n'est fini après une erreur.",
-    "reverse": false
-  },
-  {
-    "id": "Q84",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je reste bloqué trop longtemps sur ce qui n'a pas marché.",
-    "reverse": true
-  },
-  {
-    "id": "Q85",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je reprends vite le fil après une contre-performance.",
-    "reverse": false
-  },
-  {
-    "id": "Q86",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je tire des leçons utiles de mes difficultés.",
-    "reverse": false
-  },
-  {
-    "id": "Q87",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Un échec me touche parfois plus longtemps que je ne le voudrais.",
-    "reverse": false
-  },
-  {
-    "id": "Q88",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je sais me reconstruire dans l'action.",
-    "reverse": false
-  },
-  {
-    "id": "Q89",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je peux reprendre confiance après un passage raté.",
-    "reverse": false
-  },
-  {
-    "id": "Q90",
-    "type": "likert",
-    "dimension": "resilience",
-    "label": "Résilience",
-    "text": "Je me relève mentalement quand la situation se complique.",
-    "reverse": false
-  },
-  {
-    "id": "Q91",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "J'aime comprendre en profondeur ce qu'il faut faire pour progresser.",
-    "reverse": false
-  },
-  {
-    "id": "Q92",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je préfère agir sans trop analyser ce que je fais.",
-    "reverse": true
-  },
-  {
-    "id": "Q93",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je repère assez vite les logiques d'une situation de jeu.",
-    "reverse": false
-  },
-  {
-    "id": "Q94",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je comprends bien les liens entre stratégie, intention et exécution.",
-    "reverse": false
-  },
-  {
-    "id": "Q95",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je prends parfois des décisions sans vraiment lire ce qui se passe.",
-    "reverse": false
-  },
-  {
-    "id": "Q96",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "J'aime anticiper plusieurs options avant d'agir.",
-    "reverse": false
-  },
-  {
-    "id": "Q97",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je vois facilement comment adapter mon comportement à la situation.",
-    "reverse": false
-  },
-  {
-    "id": "Q98",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je peux manquer de lucidité tactique quand l'action s'accélère.",
-    "reverse": false
-  },
-  {
-    "id": "Q99",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "J'apprends mieux quand je comprends le sens de l'exercice.",
-    "reverse": false
-  },
-  {
-    "id": "Q100",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je repère les indices utiles pour prendre une bonne décision.",
-    "reverse": false
-  },
-  {
-    "id": "Q101",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je réfléchis volontiers à ce qui me fait progresser.",
-    "reverse": false
-  },
-  {
-    "id": "Q102",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je peine parfois à analyser calmement ce qui se passe.",
-    "reverse": true
-  },
-  {
-    "id": "Q103",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je peux relier mes sensations à des repères concrets.",
-    "reverse": false
-  },
-  {
-    "id": "Q104",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je lis souvent la situation avec un temps de retard.",
-    "reverse": false
-  },
-  {
-    "id": "Q105",
-    "type": "likert",
-    "dimension": "cognition",
-    "label": "Cognition",
-    "text": "Je développe de la clarté quand je prends du recul.",
-    "reverse": false
-  },
-  {
-    "id": "Q106",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je ressens facilement comment mon corps s'organise dans le mouvement.",
-    "reverse": false
-  },
-  {
-    "id": "Q107",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je manque parfois de repères corporels pendant l'action.",
-    "reverse": true
-  },
-  {
-    "id": "Q108",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je perçois assez vite si mon geste est juste ou non.",
-    "reverse": false
-  },
-  {
-    "id": "Q109",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je comprends mieux quand on me montre et que je ressens l'action.",
-    "reverse": false
-  },
-  {
-    "id": "Q110",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je me sens parfois coupé de mes sensations dans le mouvement.",
-    "reverse": true
-  },
-  {
-    "id": "Q111",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je repère comment mon équilibre influence mon efficacité.",
-    "reverse": false
-  },
-  {
-    "id": "Q112",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je trouve assez vite une manière personnelle de réaliser un geste.",
-    "reverse": false
-  },
-  {
-    "id": "Q113",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "J'ai besoin de beaucoup de répétitions pour sentir un mouvement juste.",
-    "reverse": false
-  },
-  {
-    "id": "Q114",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je sens assez bien ce qui change dans mes appuis et mon rythme.",
-    "reverse": false
-  },
-  {
-    "id": "Q115",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je peux adapter mon geste sans tout perdre mentalement.",
-    "reverse": false
-  },
-  {
-    "id": "Q116",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je perçois rapidement les effets d'une correction technique.",
-    "reverse": false
-  },
-  {
-    "id": "Q117",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je me sens parfois trop rigide dans mon organisation corporelle.",
-    "reverse": true
-  },
-  {
-    "id": "Q118",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je fais confiance à mes sensations pour ajuster mon mouvement.",
-    "reverse": false
-  },
-  {
-    "id": "Q119",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je peine à identifier ce qui change dans mon corps quand je réussis.",
-    "reverse": true
-  },
-  {
-    "id": "Q120",
-    "type": "likert",
-    "dimension": "motricite",
-    "label": "Motricité",
-    "text": "Je comprends la relation entre sensation, geste et efficacité.",
-    "reverse": false
-  },
-  {
-    "id": "Q121",
-    "type": "binary",
-    "axis": "ei",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Après une séance importante, je récupère surtout en échangeant avec les autres.",
-    "optionB": "Après une séance importante, je récupère surtout en me retrouvant seul."
-  },
-  {
-    "id": "Q122",
-    "type": "binary",
-    "axis": "ei",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Dans un groupe, je prends facilement la parole.",
-    "optionB": "Dans un groupe, je préfère observer avant de parler."
-  },
-  {
-    "id": "Q123",
-    "type": "binary",
-    "axis": "ei",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "L'énergie collective me stimule pendant la compétition.",
-    "optionB": "Je performe mieux quand je reste dans ma bulle."
-  },
-  {
-    "id": "Q124",
-    "type": "binary",
-    "axis": "ei",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Avant un match, j'aime être au contact de l'ambiance.",
-    "optionB": "Avant un match, j'aime préserver mon espace intérieur."
-  },
-  {
-    "id": "Q125",
-    "type": "binary",
-    "axis": "sn",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je fais confiance à ce que j'observe concrètement.",
-    "optionB": "Je repère vite les possibilités cachées derrière la situation."
-  },
-  {
-    "id": "Q126",
-    "type": "binary",
-    "axis": "sn",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "J'apprends mieux à partir d'exemples précis.",
-    "optionB": "J'apprends mieux à partir d'idées et de liens globaux."
-  },
-  {
-    "id": "Q127",
-    "type": "binary",
-    "axis": "sn",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je préfère des consignes claires et concrètes.",
-    "optionB": "Je préfère comprendre l'intention générale pour adapter ensuite."
-  },
-  {
-    "id": "Q128",
-    "type": "binary",
-    "axis": "sn",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je m'appuie d'abord sur les faits du moment.",
-    "optionB": "Je m'appuie d'abord sur ce qui pourrait arriver ensuite."
-  },
-  {
-    "id": "Q129",
-    "type": "binary",
-    "axis": "tf",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je décide d'abord selon ce qui me semble logique et efficace.",
-    "optionB": "Je décide d'abord en tenant compte des personnes et du ressenti."
-  },
-  {
-    "id": "Q130",
-    "type": "binary",
-    "axis": "tf",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Pour progresser, je préfère un retour direct et objectif.",
-    "optionB": "Pour progresser, je préfère un retour nuancé et humain."
-  },
-  {
-    "id": "Q131",
-    "type": "binary",
-    "axis": "tf",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "En situation difficile, je tranche assez rationnellement.",
-    "optionB": "En situation difficile, j'accorde beaucoup de place au ressenti."
-  },
-  {
-    "id": "Q132",
-    "type": "binary",
-    "axis": "tf",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je me sens à l'aise avec une évaluation franche.",
-    "optionB": "Je me sens à l'aise avec une évaluation formulée avec tact."
-  },
-  {
-    "id": "Q133",
-    "type": "binary",
-    "axis": "jp",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je préfère préparer les choses à l'avance et structurer mon cadre.",
-    "optionB": "Je préfère garder de la souplesse et m'adapter au fil de la situation."
-  },
-  {
-    "id": "Q134",
-    "type": "binary",
-    "axis": "jp",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je suis rassuré quand l'organisation est claire.",
-    "optionB": "Je suis plus à l'aise quand il reste de la liberté."
-  },
-  {
-    "id": "Q135",
-    "type": "binary",
-    "axis": "jp",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "J'aime fermer les sujets et savoir où je vais.",
-    "optionB": "J'aime laisser plusieurs options ouvertes."
-  },
-  {
-    "id": "Q136",
-    "type": "binary",
-    "axis": "jp",
-    "text": "Choisis l'affirmation qui te ressemble le plus.",
-    "optionA": "Je préfère des routines stables.",
-    "optionB": "Je préfère une organisation vivante qui peut bouger."
   }
 ];
