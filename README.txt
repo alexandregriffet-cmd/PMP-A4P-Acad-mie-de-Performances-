@@ -1,21 +1,27 @@
-PACK PMP REFAIT À NEUF — INTÉGRATION HUB A4P
+CORRECTIF A4P — LOGO PMP + LIEN HUB
 
-Contenu :
-- /pmp/index.html
-- /pmp/style.css
-- /pmp/script.js
-- /pmp/questions.js
-- /pmp/radar.js
-- /pmp/report.js
-- /assets/logo-a4p.png
+1) Dépôt PMP autonome :
+- remplace à la racine du dépôt PMP les fichiers par ceux du dossier pmp-autonome/
+- ajoute aussi le dossier assets/ avec logo-a4p.png
 
-Installation dans ton dépôt GitHub du hub :
-1. Remplace entièrement le dossier /pmp par celui de ce pack.
-2. Remplace ou ajoute le dossier /assets avec logo-a4p.png.
-3. Vérifie que le bouton du hub pointe bien vers : pmp/index.html
-4. Commit.
-5. Attends 30 à 60 secondes puis recharge.
+Le dépôt PMP autonome doit finir comme ceci :
+/index.html
+/style.css
+/script.js
+/questions.js
+/radar.js
+/report.js
+/assets/logo-a4p.png
 
-Ce pack est construit à partir de ta version source complète reçue :
-index.html + style.css + script.js + questions.js + radar.js + report.js
-et avec le BON logo fourni ensuite.
+2) Dépôt du hub :
+- remplace uniquement le fichier index.html racine par celui du dossier hub/
+- le bouton PMP du hub pointera vers :
+https://alexandregriffet-cmd.github.io/PMP-A4P-Acad-mie-de-Performances-/
+
+3) Dans le dépôt du hub, garde aussi :
+/assets/logo-a4p.png
+
+Important :
+- dossiers en minuscules : assets
+- le dépôt PMP autonome utilise : assets/logo-a4p.png
+- le hub utilise le lien direct vers le dépôt PMP autonome
