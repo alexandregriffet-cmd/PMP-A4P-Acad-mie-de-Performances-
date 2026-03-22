@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -129,38 +130,5 @@
   <script src="radar.js"></script>
   <script src="report.js"></script>
   <script src="script.js"></script>
-<script>
-window.addEventListener('load', function() {
-  const _orig = window.showResults
-  if (typeof _orig === 'function') {
-    window.showResults = function() {
-      _orig.apply(this, arguments)
-      setTimeout(function() {
-        try {
-          const scores = computeScores()
-          const m = meta()
-          if (window.parent && window.parent !== window) {
-            window.parent.postMessage({
-              type: 'a4p_pmp_results',
-              payload: {
-                athleteName: m.name || '',
-                athleteAge: m.age || '',
-                athleteSport: m.sport || '',
-                athleteClub: m.club || '',
-                profileCode: scores.mbtiType || '',
-                profileLabel: scores.actionCode || '',
-                scores: scores.pmp || {},
-                mbtiAxes: scores.mbtiAxes || {},
-                motor: scores.motor || {},
-                rawPayload: scores
-              }
-            }, '*')
-          }
-        } catch(e) { console.warn('A4P postMessage error', e) }
-      }, 500)
-    }
-  }
-})
-</script>
 </body>
 </html>
